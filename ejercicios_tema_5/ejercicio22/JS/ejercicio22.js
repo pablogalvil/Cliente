@@ -1,22 +1,18 @@
 class Alumno {
-  constructor(nombre, edad) {
+  constructor(nombre, edad, notaMedia) {
     this.nombre = nombre;
     this.edad = edad;
+    this.notaMedia = notaMedia;
   }
 
-  saludar() {
-    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
-  }
-
-  cumplirAnios() {
-    this.edad += 1;
+  presentarse() {
     console.log(
-      `Feliz cumpleaños ${this.nombre}, ahora tienes ${this.edad} años.`
+      `Me llamo ${this.nombre}, tengo ${this.edad} años y mi nota media es de ${this.notaMedia}`
     );
   }
 }
 
-const alumno = new Alumno("Juan", 30);
-alumno.saludar();
-alumno.cumplirAnios();
-alumno.saludar();
+const alumno = new Alumno("Francisco", 16, 9.3);
+alumno.presentarse();
+const alumno2 = new Alumno("Miguel", 16, 3.6);
+alumno2.presentarse();
