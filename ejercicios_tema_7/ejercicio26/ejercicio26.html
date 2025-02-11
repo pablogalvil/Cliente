@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #caja {
+            display: grid;
+            grid-template-columns: repeat(6, 80px);
+            grid-template-rows: repeat(5, 80px);
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: black;
+            border: 2px solid #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .revealed {
+            cursor: grab;
+        }
+        .matched {
+            cursor: default;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Haz click en la pareja para desbloquearla</h1>
+    <div id="caja"></div>
+    <p id="tiempo">Tiempo: 0s</p>
+    <script src="JS/ejercicio26.js"></script>
+</body>
+</html>
