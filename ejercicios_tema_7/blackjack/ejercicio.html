@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #game { margin-top: 20px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Juego de Blackjack</h1>
+    <div id="game">
+        <p id="message"></p>
+        <p>Mano del jugador: <span id="player-hand"></span> ( <span id="player-score"></span> )</p>
+        <p>Mano de la banca: <span id="dealer-hand"></span> ( <span id="dealer-score"></span> )</p>
+        <button id="hit">Pedir Carta</button>
+        <button id="stand">Plantarse</button>
+        <button id="restart" class="hidden">Reiniciar Juego</button>
+    </div>
+    <script src="JS/ejercicio.js"></script>
+</body>
+</html>
