@@ -1,5 +1,6 @@
+//Solo me funciona si uso la extension live server para probarlo
 let notificationInterval;
-const url = "https://www.ejemplo.com"; // Cambia esto por el enlace deseado
+const url = "https://www.ejemplo.com";
 
 function notifyUser() {
   if (!("Notification" in window)) {
@@ -30,11 +31,9 @@ function showNotification() {
     notification.close();
   };
 
-  setTimeout(() => notification.close(), 1000);
+  setTimeout(() => notification.close(), 30000);
 }
 
-// Iniciar las notificaciones cada 30 segundos
 notificationInterval = setInterval(notifyUser, 30000);
 
-// Iniciar la primera notificación inmediatamente
 notifyUser();
