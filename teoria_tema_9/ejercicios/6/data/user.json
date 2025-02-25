@@ -1,0 +1,16 @@
+{    
+    "cliente" : {
+        "nombre" : "Pepe",
+        "telefono" : "123456789"
+    },
+    "pedidos" : [
+        {
+            "producto" : "Pan",
+            "cantidad" : 3
+        },
+        {
+            "producto" : "Leche",
+            "cantidad" : 1
+        }
+    ]
+}

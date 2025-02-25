@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="boton">Cargar sitio</button>
+
+    <div id="response"></div>
+
+    <script>
+        function ajax(){
+            const http = new XMLHttpRequest();
+            const url = 'http://127.0.0.1:5500/teoria_tema_9/ejercicios/5/hola.html';
+
+            http.onreadystatechange = function(){
+                //4 es que la operacion se ha completado y status 200 es que la respuesta ha sido satisfactoria
+                if(this.readyState == 4 && this.status == 200){
+                    console.log(this.responseText);
+                    document.getElementById('response').innerHTML = this.responseText;
+                }
+            }
+
+            http.open('GET', url, true);
+            http.send();
+        }
+
+        document.getElementById('boton').addEventListener('click', function(){
+            ajax();
+        });
+    </script>
+</body>
+</html>
