@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .product {
+            background-color: #eeffa0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product .name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product .description {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .product .price {
+            margin-top: 15px;
+            font-size: 18px;
+            color: rgb(173, 28, 28);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="product" id="product1">
+            <img src="" alt="Imagen Café" class="coffee-image">
+            <div class="name">Café Espresso</div>
+            <div class="description">Un café fuerte y sabroso para comenzar el día.</div>
+            <div class="price">$3.99</div>
+        </div>
+        <div class="product" id="product2">
+            <img src="" alt="Imagen Café" class="coffee-image">
+            <div class="name">Café Americano</div>
+            <div class="description">Café suave con un toque de agua caliente.</div>
+            <div class="price">$4.50</div>
+        </div>
+        <div class="product" id="product3">
+            <img src="" alt="Imagen Café" class="coffee-image">
+            <div class="name">Café Latte</div>
+            <div class="description">Un delicioso café con leche y un toque de espuma.</div>
+            <div class="price">$5.00</div>
+        </div>
+        <div class="product" id="product4">
+            <img src="" alt="Imagen Café" class="coffee-image">
+            <div class="name">Café Mocha</div>
+            <div class="description">Café combinado con chocolate y leche espumosa.</div>
+            <div class="price">$5.50</div>
+        </div>
+        <div class="product" id="product5">
+            <img src="" alt="Imagen Café" class="coffee-image">
+            <div class="name">Café Capuchino</div>
+            <div class="description">Café con leche espumosa y cacao en polvo.</div>
+            <div class="price">$4.75</div>
+        </div>
+        <div class="product" id="product6">
+            <img src="" alt="Imagen Café" class="coffee-image">
+            <div class="name">Café Cortado</div>
+            <div class="description">Café corto con un toque de leche vaporizada.</div>
+            <div class="price">$3.75</div>
+        </div>
+        <div class="product" id="product7">
+            <img src="" alt="Imagen Café" class="coffee-image">
+            <div class="name">Café Frappuccino</div>
+            <div class="description">Café helado con hielo y crema batida.</div>
+            <div class="price">$6.00</div>
+        </div>
+        <div class="product" id="product8">
+            <img src="" alt="Imagen Café" class="coffee-image">
+            <div class="name">Café Cold Brew</div>
+            <div class="description">Café frío de larga extracción con un toque suave.</div>
+            <div class="price">$4.25</div>
+        </div>
+        <div class="product" id="product9">
+            <img src="" alt="Imagen Café" class="coffee-image">
+            <div class="name">Café Con Leche</div>
+            <div class="description">Café con un toque cremoso de leche.</div>
+            <div class="price">$4.00</div>
+        </div>
+    </div>
+
+    <script src="ejercicio35.js"></script>
+</body>
+</html>

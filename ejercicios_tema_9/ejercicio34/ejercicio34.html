@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            color: #333;
+        }
+        #search-results {
+            margin-top: 20px;
+        }
+        .product {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #eeffa0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .product img {
+            width: 100px;
+            height: auto;
+        }
+        .product .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .product .price {
+            color: rgb(173, 28, 28);
+            font-size: 16px;
+        }
+        .product .link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .product .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buscar Productos</h1>
+    <form id="search-form">
+        <label for="query">Palabras clave:</label>
+        <input type="text" id="query" name="query" placeholder="Ejemplo: libros" required>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="search-results">
+    </div>
+
+    <script src="JS/ejercicio34.js"></script>
+</body>
+</html>
